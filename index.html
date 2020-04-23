@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="Running Pace Calclator" content="ランニング電卓">
+    <title>ランニング ペース電卓</title>
+</head>
+
+<body>
+    <h1>ランニング電卓</h1>
+    <div id="modeSelect">
+        計算モード
+        <select name="mode">
+            <option value="distance">距離</option>
+            <option value="pace">ペース</option>
+            <option value="time">時間</option>
+        </select>
+    </div>
+    
+    <div id="inputForms">
+        <div id="distanceModeInput">
+            <div class="inputPace">
+                ペース:
+                <input type="number" name="inputPace_minute" id="inputDistanceModePace_minute" max=2>'
+                <input type="number" name="inputPace_second" id="inputDistanceModePace_second" max=2>"/km
+            </div>
+            <div class="inputTime">
+                時間:
+                <input type="number" name="inputTime_hour" id="inputDistanceModeTime_hour" max=2>:
+                <input type="number" name="inputTime_minute" id="inputDistanceModeTime_minute" max=2>'
+                <input type="number" name="inputTime_second" id="inputDistanceModeTime_second" max=2>"
+            </div>
+        </div>
+        <div id="paceModeInput">
+            <div class="inputDistance">
+                距離:
+                <input type="number" name="inputDistance" id="inputPaceModeDistance" max=6>km
+            </div>
+            <div class="inputTime">
+                時間:
+                <input type="number" name="inputTime_hour" id="inputPaceModeTime_hour" max=2>:
+                <input type="number" name="inputTime_minute" id="inputPaceModeTime_minute" max=2>'
+                <input type="number" name="inputTime_second" id="inputPaceModeTime_second" max=2>"
+            </div>
+        </div>
+        <div id="timeModeInput">
+            <div class="inputDistance">
+                距離:
+                <input type="number" name="inputDistance" id="inputTimeModeDistance" max=6>km
+            </div>
+            <div class="inputPace">
+                ペース:
+                <input type="number" name="inputPace_minute" id="inputTimeModePace_minute" max=2>'
+                <input type="number" name="inputPace_second" id="inputTimeModePace_second" max=2>"/km
+            </div>
+        </div>
+    </div>
+    
+    <div id="runButton">
+        <button type="button" name="aaa" value="aaa">計算</button>
+    </div>
+    
+    <div id="resultOutput">
+        <h2>結果</h2>
+        <div id="output"></div>
+    </div>
+    
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
