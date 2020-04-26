@@ -11,7 +11,7 @@
     <h1>ランニング電卓</h1>
     <div id="modeSelect">
         計算モード
-        <select name="mode">
+        <select name="mode" id="modeSelects">
             <option value="distance">距離</option>
             <option value="pace">ペース</option>
             <option value="time">時間</option>
@@ -22,37 +22,37 @@
         <div id="distanceModeInput">
             <div class="inputPace">
                 ペース:
-                <input type="number" name="inputPace_minute" id="inputDistanceModePace_minute" max=2>'
-                <input type="number" name="inputPace_second" id="inputDistanceModePace_second" max=2>"/km
+                <input type="number" name="inputPace_minute" id="inputDistanceModePace_minute" min=0 max=59>'
+                <input type="number" name="inputPace_second" id="inputDistanceModePace_second" min=0 max=59>"/km
             </div>
             <div class="inputTime">
                 時間:
-                <input type="number" name="inputTime_hour" id="inputDistanceModeTime_hour" max=2>:
-                <input type="number" name="inputTime_minute" id="inputDistanceModeTime_minute" max=2>'
-                <input type="number" name="inputTime_second" id="inputDistanceModeTime_second" max=2>"
+                <input type="number" name="inputTime_hour" id="inputDistanceModeTime_hour" min=0 max=99>:
+                <input type="number" name="inputTime_minute" id="inputDistanceModeTime_minute" min=0 max=59>'
+                <input type="number" name="inputTime_second" id="inputDistanceModeTime_second" min=0 max=59>"
             </div>
         </div>
         <div id="paceModeInput">
             <div class="inputDistance">
                 距離:
-                <input type="number" name="inputDistance" id="inputPaceModeDistance" max=6>km
+                <input type="number" name="inputDistance" id="inputPaceModeDistance" min=0 max=999999>km
             </div>
             <div class="inputTime">
                 時間:
-                <input type="number" name="inputTime_hour" id="inputPaceModeTime_hour" max=2>:
-                <input type="number" name="inputTime_minute" id="inputPaceModeTime_minute" max=2>'
-                <input type="number" name="inputTime_second" id="inputPaceModeTime_second" max=2>"
+                <input type="number" name="inputTime_hour" id="inputPaceModeTime_hour" min=0 max=99>:
+                <input type="number" name="inputTime_minute" id="inputPaceModeTime_minute" min=0 max=59>'
+                <input type="number" name="inputTime_second" id="inputPaceModeTime_second" min=0 max=59>"
             </div>
         </div>
         <div id="timeModeInput">
             <div class="inputDistance">
                 距離:
-                <input type="number" name="inputDistance" id="inputTimeModeDistance" max=6>km
+                <input type="number" name="inputDistance" id="inputTimeModeDistance" min=0 max=999999>km
             </div>
             <div class="inputPace">
                 ペース:
-                <input type="number" name="inputPace_minute" id="inputTimeModePace_minute" max=2>'
-                <input type="number" name="inputPace_second" id="inputTimeModePace_second" max=2>"/km
+                <input type="number" name="inputPace_minute" id="inputTimeModePace_minute" min=0 max=59>'
+                <input type="number" name="inputPace_second" id="inputTimeModePace_second" min=0 max=59>"/km
             </div>
         </div>
     </div>
